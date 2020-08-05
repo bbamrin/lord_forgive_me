@@ -1,5 +1,9 @@
 #!/bin/bash
-for (( c=1; c<11; c++ ))
+for (( c=1; c<100; c++ ))
 do
-./generator --flow-one > flow-one/kek$c
+    ./generator --flow-one > flow-one/kek$c
+    ./generator --flow-ten > flow-ten/kek$c
+    ./generator --flow-thousand > flow-thousand/kek$c
+    ./generator --big > big/kek$c
+    ./generator --big-superposition > big-superposition/kek$c
 done
