@@ -1,0 +1,5 @@
+#!/bin/bash
+for (( c=1; c<11; c++ ))
+do
+./generator --flow-one > flow-one/kek$c
+done
